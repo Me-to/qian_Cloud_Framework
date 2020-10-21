@@ -1,0 +1,22 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /register
+spring:
+  application:
+    name: Qian-Register
+  security:
+    user:
+      name: qian
+      password: qian
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false   #是否讲服务端注册到Eurka
+    fetch-registry: false        #是否从别的服务端获取信息
+    instance-info-replication-interval-seconds: 30
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}${server.servlet.context-path}/eureka/
+

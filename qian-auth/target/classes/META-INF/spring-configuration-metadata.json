@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "qian.auth",
+      "type": "com.example.qian.auth.properties.QianAuthProperties",
+      "sourceType": "com.example.qian.auth.properties.QianAuthProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "qian.auth.access-token-validity-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.qian.auth.properties.QianAuthProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "qian.auth.clients",
+      "type": "com.example.qian.auth.properties.QianClientProperties[]",
+      "sourceType": "com.example.qian.auth.properties.QianAuthProperties",
+      "defaultValue": []
+    },
+    {
+      "name": "qian.auth.refresh-token-validity-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.qian.auth.properties.QianAuthProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
